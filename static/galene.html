@@ -38,24 +38,24 @@
               <ul class="nav-menu">
                 <li>
                   <button id="presentbutton" class="invisible btn btn-success">
-                    <i class="fas fa-play" aria-hidden="true"></i><span class="nav-text"> Enable</span>
+                    <i class="fas fa-play" aria-hidden="true"></i><span class="nav-text"> ВКЛ</span>
                   </button>
                 </li>
                 <li>
                   <button id="unpresentbutton" class="invisible btn btn-cancel">
-                    <i class="fas fa-stop" aria-hidden="true"></i><span class="nav-text"> Disable</span>
+                    <i class="fas fa-stop" aria-hidden="true"></i><span class="nav-text"> ВЫКЛ</span>
                   </button>
                 </li>
                 <li>
                   <div id="mutebutton" class="nav-link nav-button">
                     <span><i class="fas fa-microphone-slash" aria-hidden="true"></i></span>
-                    <label>Mute</label>
+                    <label>Заглушить</label>
                   </div>
                 </li>
                 <li>
                   <div id="sharebutton" class="invisible nav-link nav-button">
                     <span><i class="fas fa-share-square" aria-hidden="true"></i></span>
-                    <label>Share Screen</label>
+                    <label>Показать экран</label>
                   </div>
                 </li>
                 <li>
@@ -106,28 +106,28 @@
                 <div class="login-box">
                   <form id="loginform" class="loginform">
                     <div id="userform">
-                      <label for="username">Username</label>
+                      <label for="username">Имя пользователя</label>
                       <input id="username" type="text" name="username"
                              autocomplete="username" class="form-control"/>
                     </div>
                     <div id="passwordform">
-                      <label for="password">Password</label>
+                      <label for="password">Пароль</label>
                       <input id="password" type="password" name="password"
                              autocomplete="current-password" class="form-control"/>
                     </div>
-                    <label>Enable at start:</label>
+                    <label>Включить при запуске:</label>
                     <div class="present-switch">
                       <p class="switch-radio">
                         <input id="presentoff" type="radio" name="presentradio" value="" checked/>
-                        <label for="presentoff">Nothing</label>
+                        <label for="presentoff">Ничего</label>
                       </p>
                       <p class="switch-radio">
                         <input id="presentmike" type="radio" name="presentradio" value="mike"/>
-                        <label for="presentmike">Microphone</label>
+                        <label for="presentmike">Микрофон</label>
                       </p>
                       <p class="switch-radio">
                         <input id="presentboth" type="radio" name="presentradio" value="both"/>
-                        <label for="presentboth">Camera and microphone</label>
+                        <label for="presentboth">Камера и микрофон</label>
                       </p>
                     </div>
                     <div class="clear"></div>
@@ -146,7 +146,7 @@
 
     <div id="sidebarnav" class="sidenav">
       <div class="sidenav-header">
-        <h2>Settings</h2>
+        <h2>Настройки</h2>
         <a class="closebtn" id="clodeside"><i class="fas fa-times" aria-hidden="true"></i></a>
       </div>
       <div class="sidenav-content" id="optionsdiv">
@@ -158,100 +158,100 @@
             <div class="profile-info">
               <span id="userspan"></span>
               <span id="permspan"></span>
-              <span id="chpwspan" class="invisible"><a id="change-password">Change password</a></span>
+              <span id="chpwspan" class="invisible"><a id="change-password">Изменить пароль</a></span>
             </div>
             <div class="user-logout">
               <a id="disconnectbutton">
                 <span class="logout-icon"><i class="fas fa-sign-out-alt"></i></span>
-                <span class="logout-text">Logout</span>
+                <span class="logout-text">Выход</span>
               </a>
             </div>
           </div>
         </div>
         <div id="mediaoptions" class="invisible">
           <fieldset>
-            <legend>Media Options</legend>
-            <label for="videoselect" class="sidenav-label-first">Camera:</label>
+            <legend>Настройки медиа</legend>
+            <label for="videoselect" class="sidenav-label-first">Камера:</label>
             <select id="videoselect" class="select select-inline">
-              <option value="">off</option>
+              <option value="">выкл</option>
             </select>
   
-            <label for="audioselect" class="sidenav-label">Microphone:</label>
+            <label for="audioselect" class="sidenav-label">Микрофон:</label>
             <select id="audioselect" class="select select-inline">
-              <option value="">off</option>
+              <option value="">выкл</option>
             </select>
 
             <form>
               <input id="mirrorbox" type="checkbox" checked/>
-              <label for="mirrorbox">Mirror view</label>
+              <label for="mirrorbox">Зеркальное отображение</label>
             </form>
 
             <form>
               <input id="blackboardbox" type="checkbox"/>
-              <label for="blackboardbox">Blackboard mode</label>
+              <label for="blackboardbox">Максимальное качество видео</label>
             </form>
   
             <form>
               <input id="preprocessingbox" type="checkbox"/ checked>
-              <label for="preprocessingbox">Noise suppression</label>
+              <label for="preprocessingbox">Удаление шума</label>
             </form>
 
             <form>
               <input id="hqaudiobox" type="checkbox"/>
-              <label for="hqaudiobox">High-quality audio</label>
+              <label for="hqaudiobox">Аудио высокого качества</label>
             </form>
 
           </fieldset>
         </div>
 
         <fieldset>
-          <legend>Other Settings</legend>
+          <legend>Другие настройки</legend>
 
           <form id="filterform">
-            <label for="filterselect" class="sidenav-label-first">Filter:</label>
+            <label for="filterselect" class="sidenav-label-first">Фильтр:</label>
             <select id="filterselect" class="select select-inline">
               <option value="" selected>none</option>
             </select>
           </form>
 
           <form id="sendform">
-            <label for="sendselect" class="sidenav-label-first">Send:</label>
+            <label for="sendselect" class="sidenav-label-first">Отправка:</label>
             <select id="sendselect" class="select select-inline">
-              <option value="lowest">lowest</option>
-              <option value="low">low</option>
-              <option value="normal" selected>normal</option>
-              <option value="unlimited">unlimited</option>
+              <option value="lowest">минимальное</option>
+              <option value="low">выше</option>
+              <option value="normal" selected>нормальное</option>
+              <option value="unlimited">безлимитное</option>
             </select>
           </form>
 
           <form id="simulcastform">
-            <label for="simulcastselect" class="sidenav-label-first">Simulcast:</label>
+            <label for="simulcastselect" class="sidenav-label-first">Одновременная трансляция:</label>
             <select id="simulcastselect" class="select select-inline">
-              <option value="off">off</option>
-              <option value="auto" selected>auto</option>
-              <option value="on">on</option>
+              <option value="off">выкл</option>
+              <option value="auto" selected>авто</option>
+              <option value="on">вкл</option>
             </select>
           </form>
 
           <form id="requestform">
-            <label for="requestselect" class="sidenav-label">Receive:</label>
+            <label for="requestselect" class="sidenav-label">Получать:</label>
             <select id="requestselect" class="select select-inline">
-              <option value="">nothing</option>
-              <option value="audio">audio only</option>
-              <option value="screenshare">screenshare only</option>
-              <option value="everything-low">low quality</option>
-              <option value="everything" selected>everything</option>
+              <option value="">ничего</option>
+              <option value="audio">только аудио</option>
+              <option value="screenshare">только демонстрация экрана</option>
+              <option value="everything-low">низкое качество</option>
+              <option value="everything" selected>все</option>
             </select>
           </form>
   
           <form>
             <input id="activitybox" type="checkbox"/>
-            <label for="activitybox">Activity detection</label>
+            <label for="activitybox">Обнаружение активности</label>
           </form>
 
           <form>
             <input id="displayallbox" type="checkbox"/>
-            <label for="displayallbox">Display audio-only users</label>
+            <label for="displayallbox">Отображение пользователей только аудио</label>
           </form>
         </fieldset>
       </div>
@@ -289,17 +289,17 @@
 
     <dialog id="invite-dialog">
       <form method="dialog">
-        <label for="invite-username">Username (optional):</label>
+        <label for="invite-username">Имя пользователя (необязательно):</label>
         <input id="invite-username" type="text"/>
         <br>
-        <label for="invite-not-before">Not before:</label>
+        <label for="invite-not-before">Не раньше:</label>
         <input id="invite-not-before" type="datetime-local"/>
         <br>
-        <label for="invite-expires">Expires:</label>
+        <label for="invite-expires">Истекает:</label>
         <input id="invite-expires" type="datetime-local"/>
         <br>
-        <button id="invite-cancel" value="cancel" type="button">Cancel</button>
-        <button value="invite" value="invite">Invite</button>
+        <button id="invite-cancel" value="cancel" type="button">Отмена</button>
+        <button value="invite" value="invite">Пригласить</button>
       </form>
     </dialog>
 
